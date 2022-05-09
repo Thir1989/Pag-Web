@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    color: green;
+}
+main {
+    color: blueviolet;
+}
+.titulo {
+    color: brown;
+}
+.faq {
+    color: chartreuse;
+    background-color: black;
+    font-family: sans-serif;
+    text-decoration: none;
+}
