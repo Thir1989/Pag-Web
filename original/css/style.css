@@ -24,7 +24,6 @@ box-sizing: border-box;
 }
 .main__fondo{
     background-color: #fad2d3;
-    min-height: 100vh;
 }
 .formato__titulo {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -85,6 +84,9 @@ box-sizing: border-box;
 }
 .tarjeta__parrafo {
     color: grey;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
 }
 .formato__footer {
     width: 100%;
@@ -133,7 +135,7 @@ box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     position: absolute;
-    top: 40px;
+    bottom: -8px;
     left: 600px;
 }
 .footer {
@@ -149,29 +151,11 @@ box-sizing: border-box;
 .logotipo__footer {
 
 }
-.footer__linkwhatsapp {
+.footer__link {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;     
     padding: 5px;
     margin-right: 1rem;
-    color: #0dbf42;
-    font-size: 32px;
-}
-.footer__linkinstagram {
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;     
-    padding: 5px;
-    margin-right: 1rem;
-    color: #bf4476;
-    font-size: 32px;
-}
-.footer__linkfacebook {
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;     
-    padding: 5px;
-    margin-right: 1rem;
-    color: #0d8af0;
-    font-size: 32px;
 }
 .tarjeta__descuento {
     background-color: brown;
@@ -201,43 +185,32 @@ box-sizing: border-box;
     font-size: 50px;
     background-color: aquamarine;
 }
-
-.main__fondoproductos {
-    background-color: aquamarine;
+.contenedor {
     }
-.galeria__contenedor {
-    max-width: 1200px;
-    margin: 0 auto;
+.main__fondoproductos {
     }
 .contenedor__productos {
+    padding: 1rem 30%;
+    background-color: aquamarine;
+    min-height: 500px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 50% 50% 50% 50%;
+    grid-template-rows: 40% 40% 40% 40%;
     grid-template-areas:
-        "ele1 ele2 ele3"
-        "ele1 ele4 ele4"
-        "ele5 ele6 ele7"
-        "ele5 ele8 ele9";
-    gap: 1rem;
-    padding-bottom: 1rem;
-    justify-items: center;
-    align-items: center;
-}
-.galeria__titulo {
-    font-size: 30px;
-    margin-bottom: 2rem;
-    color: blueviolet;
+        "ele1 ele1 ele2"
+        "ele3 ele4 ele5"
+        "ele6 ele7 ele7"
+        "ele8 ele8 ele9"
+        "ele10 ele12 ele13"
+        "ele14 ele12    .";
+        justify-content: space-evenly;
 }
 .galeria__productosimagen {
-    width: 300px;
-    height: 300px;
-    border: 2px solid black;
-    border-radius: 8px;
+    width: 90%;
+    height: 90%;
 }
 .imagen__1 {
     grid-area: ele1;
-    height: 100%;
-    width: 100%;
 }
 .imagen__2 {
     grid-area: ele2;
@@ -247,12 +220,9 @@ box-sizing: border-box;
 }
 .imagen__4 {
     grid-area: ele4;
-    width: 90%;
 }
 .imagen__5 {
     grid-area: ele5;
-    height: 100%;
-    width: 100%;
 }
 .imagen__6 {
     grid-area: ele6;
@@ -266,81 +236,22 @@ box-sizing: border-box;
 .imagen__9 {
     grid-area: ele9;
 }
-.body{
+.imagen__10 {
+    grid-area: ele10;
 }
-@media screen and (max-width: 1023px) {
-    .footer__link {
-        margin-right: 0;
-    }
-    .section__galeria {
-        text-align: center;
-    }
-    .texto__presentacion {
-        width: 500px;
-        height: auto;
-    }
-    .formato__derechos {
-        left: 350px;
-        bottom: -20px;
-    }
-    .galeria__productosimagen {
-        width: 200px;
-        height: 200px;
-    }
-    .contenedor__productos {
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas: 
-        "ele1 ele2 ele3"
-        "ele4 ele5 ele6"
-        "ele7 ele8 ele9";
-    }
+.imagen__11 {
+    grid-area: ele11;
 }
-@media screen and (max-width: 600px) {
-    .nav__bar {
-        display: block;
-        position: relative;
-        text-align: center;
-        background-color: #fad2d3;
-        width: 100%;
-    }
-    .footer__link {
-        margin-right: 0;
-    }
-    .section__galeria {
-        text-align: center;
-    }
-    .texto__presentacion {
-        width: 500px;
-        height: auto;
-    }
-    .formato__derechos {
-        left: 150px;
-        bottom: 20px;
-    }
-    .formato__suscripcion {
-        left: 60px;
-    }
-    .suscripcion_ingreseemail {
-        left: 60px;
-    }
-    .suscripcion__relleno {
-        left: 60px;
-    }
-    .formulario__boton {
-        left: 210px;
-    }
-    .galeria__productosimagen {
-        width: 100px;
-        height: 100px;
-    }
-    .contenedor__productos {
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas: 
-        "ele1 ele2 ele3"
-        "ele4 ele5 ele6"
-        "ele7 ele8 ele9";
-        height: auto;
-    }
-    .formato__footer {
-    }
+.imagen__12 {
+    grid-area: ele12;
+}
+.imagen__13 {
+    grid-area: ele13;
+}
+.imagen__14 {
+    grid-area: ele14;
+}
+ul {
+    margin-bottom: 0;
+    padding-left: 0;
 }

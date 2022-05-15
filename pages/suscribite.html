@@ -10,8 +10,8 @@
         <link rel="shortcut icon" href="../imagenes/favicon.jpg" type="image/x-icon">
     </head>
 <body>
-    <header>
-        <div class="header_fondo">
+    <header class="header_fondo">
+        <div>
             <img src="../imagenes/logonegro.jpg" width="40"  height="40" alt="">
         </div>       
         <nav>
@@ -24,8 +24,22 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Registrese en nuestra página</h1>
+    <main class="main__fondo">
+        <section>
+            <div>
+                <h1 class="formato__titulo">Luna Lunera Creaciones</h1>     
+                <div class="formato__formulario">
+                    <p class="formato__suscripcion">Suscribite!</p>
+                    <form action="" method="" enctype="">
+                    <div class="formulario">
+                        <label for="Email" class="suscripcion_ingreseemail">Ingrese su email</label>
+                        <input class="suscripcion__relleno" type="email" id="Email" name="Email" placeholder="Ingrese su email">
+                        <button class="formulario__boton">Enviar</button>                    
+                    </div>
+                    </form>
+                </div>           
+            </div>
+        </section>
     </main>
     <footer class="formato__footer">
         <img src="../imagenes/logoblanco.png" width="60" height="60" alt="" class="logotipo__footer">
