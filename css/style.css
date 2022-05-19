@@ -17,6 +17,19 @@ box-sizing: border-box;
     margin-top: 1rem;
     z-index: 1;
 }
+.nav__fondo {
+    background-image: linear-gradient(to left, pink, black);
+    color: white;
+}
+.nav__alineacion {
+    text-align: right;
+}
+.color {
+    color: white;
+}
+.nav__logotipo {
+    padding: 1rem;
+}
 .nav__link {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
@@ -312,6 +325,14 @@ box-sizing: border-box;
     animation-name: subtitulo;
     animation-duration: 3s;
     animation-iteration-count: infinite;
+}
+.contacto__texto {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+}
+.imagen__contacto {
+    border-radius: 50%;
 }
 @keyframes subtitulo {
     0% {
