@@ -1,0 +1,59 @@
+.formato__footer {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: relative;
+}
+.formato__footer2 {
+    color: black;
+    text-align: center;
+}
+.formato__derechos {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    position: absolute;
+    top: 18px;
+    left: 40%;
+}
+.footer {
+    position: relative;
+    width: 100%;
+}
+.formato__footerlink {
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;    
+}
+.footer__logotipo {
+    margin: 0%;
+}
+.footer__linkwhatsapp {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #0dbf42;
+    font-size: 32px;
+    position: absolute;
+    bottom: -18px;
+    left: -5rem;
+}
+.footer__linkinstagram {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #bf4476;
+    font-size: 32px;
+    position: absolute;
+    bottom: -18px;
+    left: -3rem;
+}
+.footer__linkfacebook {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;     
+    padding: 1px;
+    color: #0d8af0;
+    font-size: 32px;
+    position: absolute;
+    bottom: -18px ;
+    left: -1rem;
+}

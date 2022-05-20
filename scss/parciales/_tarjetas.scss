@@ -1,0 +1,21 @@
+.tarjeta__descuento {
+    background-color: brown;
+    color: white;
+    padding: 4px 5px;
+    display: inline-block;
+    border-radius: 16px;
+    position: absolute; /* cambie al padre a relative para que quede bien */
+    top: 0px;
+    right: 0px;
+}
+.tarjeta__agotarstock {
+    background-color: lawngreen;
+    color: black;
+    border: 1px solid;
+    padding: 4px 5px;
+    display: inline-block;
+    border-radius: 16px;
+    position: absolute; /* cambie al padre a relative para que quede bien */
+    top: 0px;
+    right: 0px;
+}
