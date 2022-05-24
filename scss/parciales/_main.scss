@@ -1,7 +1,7 @@
-.main__fondo{
-    background-color: #fad2d3;
-    min-height: 100vh;
-}
+// .main__fondo{
+//     background-color: #fad2d3;
+//     min-height: 100vh;
+// }
 .formato__titulo {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
@@ -15,7 +15,6 @@
 .formato__subtitulo1 {
     margin: 1rem;
     text-align: center;
-    color: black;
     font-family: serif;
     font-size: 50px;
 }
@@ -27,39 +26,6 @@
     width: 900px;
     height: 95px;
 }
-.section__galeria {
+// .section__galeria {
     
-}
-.formato__TituloImagenes {
-    margin: 1rem;
-    padding: 1rem;
-    color: black;
-    background-color: chocolate;
-    text-align: center;
-    border-radius: 6px;
-}
-.formato__tarjeta {
-    display: inline-block;
-    position: relative;
-    width: 400px;
-    height: 480px;
-    background-color: aqua;
-    border-radius: 16px;
-    text-align: center;
-    margin: 10px;
-    padding: 3px 1rem 30px 1rem;
-}
-.formato__imagenes {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    position: relative;
-    left: 40px;
-    background-color: palevioletred;
-    padding: 10px 8px 10px 8px;
-    top: 3px;
-    border-radius: 16rem;
-}
-.tarjeta__parrafo {
-    color: grey;
-}
+// }
