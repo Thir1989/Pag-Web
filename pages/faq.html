@@ -27,7 +27,7 @@
                     <a class="nav-link color" aria-current="page" href="../pages/contacto.html">Contacto</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link color" href="./suscribite.html">Suscribite</a>
+                    <a class="nav-link color" href="./encontranos.html">Encontranos</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link color" href="./productos.html">Productos</a>
@@ -40,9 +40,39 @@
             </div>
           </nav>
       </header>
-      <main>
-
-      </main>        
+      <main role="main" class="container">
+          <div class="row">
+              <!-- Aquí pon las col-x necesarias, comienza tu contenido, etcétera -->
+              <div class="col-12">
+                  <h1>Gracias por contactarme</h1>
+              </div>
+              <div class="col-12">
+                  <form>
+                      <div class="form-group">
+                          <label for="nombre">Nombre</label>
+                          <input name="nombre" required type="text" id="nombre"
+                              class="form-control" placeholder="Tu nombre">
+                      </div>
+                      <div class="form-group">
+                          <label for="correo">Correo electrónico</label>
+                          <input name="correo" required type="email" id="correo"
+                              class="form-control" placeholder="Tu correo electrónico">
+                      </div>
+                      <div class="form-group">
+                          <label for="mensaje">Mensaje</label>
+                          <textarea required placeholder="Escribe tu mensaje"
+                              class="form-control" name="mensaje" id="mensaje"
+                              cols="30" rows="5"></textarea>
+                      </div>
+                      <div class="form-group">
+                          <button class="btn-success btn" type="submit">
+                              Enviar
+                          </button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </main>      
       <footer class="formato__footer degradado">
         <img src="../imagenes/logo1.png" width="50" height="50" alt="" class="footer__logotipo">
           <div>
