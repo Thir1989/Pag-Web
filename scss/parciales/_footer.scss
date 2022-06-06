@@ -1,6 +1,12 @@
 .formato__footer {
     position: relative;
 }
+.footer__logotipo {
+    margin: 0%;
+}
+.derechos {
+    text-align: center;
+}
 .formato__derechos {
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
@@ -9,7 +15,7 @@
     left: 40%;
     color: black;
 }
-.footer {
+.footer__links {
     position: relative;
 }
 .formato__footerlink {
@@ -18,9 +24,6 @@
     position: absolute;
     bottom: 0%;
     right: 0%;    
-}
-.footer__logotipo {
-    margin: 0%;
 }
 .footer__linkwhatsapp {
     font-family: Arial, Helvetica, sans-serif;

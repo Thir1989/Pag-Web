@@ -1,3 +1,26 @@
-.color {
-    color: black;
+.fondo {
+  background-image: url(../imagenes/fondo.jpg);
+}
+.nav__alineacion {
+  display: grid;
+  grid-template-columns: 2, 1fr;
+  grid-template-areas: "ele1 ele2";
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0px;
+  padding-bottom: 3px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', Verdana, Geneva, Tahoma, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nav__titulo {
+  color: brown;
+  text-decoration: none;
+}
+.img__logo {
+  width: 40px;
+  margin-right: 2px;
+}
+.nav__paginas {
+  padding: 2px;
+  text-decoration: none;
+  color: brown;
 }

@@ -1,3 +1,12 @@
+.galeria__titulo {
+    font-size: 30px;
+    margin-bottom: 2rem;
+    color: blueviolet;
+    text-align: center;
+}
+.efecto__subtitulo:hover {
+    color: #0d8af0;
+}
 .galeria__contenedor {
     max-width: 1200px;
     margin: 0 auto;
@@ -18,14 +27,9 @@
     position: relative;
     z-index: 1;    
 }
-.galeria__titulo {
-    font-size: 30px;
-    margin-bottom: 2rem;
-    color: blueviolet;
-    text-align: center;
-}
-.efecto__subtitulo:hover {
-    color: #0d8af0;
+.efecto__galeria:hover {
+    transform: scale(1.2);
+    border: 4px solid orange;
 }
 .galeria__productosimagen {
     width: 300px;
@@ -35,10 +39,6 @@
 }
 .efectotiempo {
     transition: transform 2s;
-}
-.efecto__galeria:hover {
-    transform: scale(1.2);
-    border: 4px solid orange;
 }
 .imagen__1 {
     grid-area: ele1;

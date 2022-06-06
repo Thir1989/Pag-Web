@@ -12,63 +12,81 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" href="../imagenes/favicon.jpg" type="image/x-icon">
     </head>
-    <body>
-      <header>             
-            <nav class="navbar navbar-expand-lg bg-light degradado nav__fondo">
-                <div class="container-fluid">
-                    <a><img src="./imagenes/logo1.png" width="40"  height="40" alt=""></a>  
-                  <a class="navbar-brand color" href="../index.html">Inicio</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link color" aria-current="page" href="./pages/contacto.html">Contacto</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link color" href="./pages/encontranos.html">Encontranos</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link color" href="./pages/productos.html">Productos</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link color" href="./pages/faq.html">Faq</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
+    <body class="fondo">
+      <header>
+        <div class="container">
+          <nav class="row nav__alineacion">
+            <a href="./index.html" class="col-auto nav__titulo">
+              <img src="./imagenes/llc.png" alt="logotipo" class="img__logo">Luna Lunera Creaciones
+            </a>
+            <div class="col-auto">
+              <a href="index.html" class="nav__paginas">Inicio</a>
+              <a href="./pages/contacto.html" class="nav__paginas">Contacto</a>
+              <a href="./pages/encontranos.html" class="nav__paginas">Encontranos</a>
+              <a href="./pages/productos.html" class="nav__paginas">Productos</a>
+              <a href="./pages/faq.html" class="nav__paginas">Faq</a>
+            </div>
+          </nav>
+        </div>
       </header>
-      <main class="main__fondo degradado">
-            <section>
-                <div>
-                    <h1 class="formato__titulo transition transform__titulo">Luna Lunera Creaciones</h1>                
-                </div>           
-                <div class="formato__video">
-                    <iframe width="360" height="441" src="https://www.youtube.com/embed/ZXBes3bET_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div> 
-                <div>
-                    <h2 class="formato__subtitulo1 animacion__subtitulo">Luna Lunera</h2>
-                    <p class="texto__presentacion tracking-in-expand">
-                    Creaciones aresanales y de diseño único, lo cual hace que sea especial cada detalle de cada producto.
-                    Transmitiendo amor en cada producto, mismo amor con el que mi mamá me enseñó mis primeros pasos en arte de la costura! 
-                    Luna Lunera es fanática del reciclaje y cuidado del medio ambiente, por lo en esta pagina encontraras la metamorfosis de viejos objetos, donde cobran nuevo diseño para ser disfrutados en la calidad de tu hogar!</p>
-                </div>                 
-            </section>
+      <main>
+        <section>
+          <div>
+            <h1 class="formato__titulo transition transform__titulo">Luna Lunera Creaciones</h1>                
+          </div>           
+          <div class="formato__video">
+            <iframe width="360" height="441" src="https://www.youtube.com/embed/ZXBes3bET_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div> 
+          <div>
+            <h2 class="formato__subtitulo1 animacion__subtitulo">Luna Lunera</h2>
+            <p class="texto__presentacion tracking-in-expand">
+               Creaciones aresanales y de diseño único, lo cual hace que sea especial cada detalle de cada producto.
+               Transmitiendo amor en cada producto, mismo amor con el que mi mamá me enseñó mis primeros pasos en arte de la costura! 
+               Luna Lunera es fanática del reciclaje y cuidado del medio ambiente, por lo en esta pagina encontraras la metamorfosis de viejos objetos, donde cobran nuevo diseño para ser disfrutados en la calidad de tu hogar!</p>
+            </div>                 
+        </section>
+        <section class="container">
+          <div class="row">
+            <div class="col-12 ultimos__productos">
+              <h2 class="subtitulo__ultimosproductos">Ultimos Productos</h2>
+                <p class="ultimosproductos__parrafo">
+                  Aqui podras ver nuestros productos mas recientes, los mismos seran presentados en la proxima feria de nuestra localidad!
+                </p>
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./imagenes/4.png" class="d-block w-100" height="500" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/5.png" class="d-block w-100" height="500" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/6.png" class="d-block w-100" height="500" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </section>
       </main>
-      <footer class="formato__footer degradado">
-        <img src="./imagenes/logo1.png" width="50" height="50" alt="" class="footer__logotipo">
-        <div>
+      <footer class="formato__footer">
+        <img src="./imagenes/llc.png" width="50" height="50" alt="" class="footer__logotipo">
+        <div class="derechos">
           <p class="formato__derechos">Todos los derechos reservados</p>
         </div>
-        <div class="footer">
+        <div class="footer__links">
           <ul class="formato__footerlink">
             <li><a class="footer__linkwhatsapp" href="https://api.whatsapp.com/send?phone=542915321002&app=facebook&entry_point=page_cta&fbclid=IwAR1eWqDRRFpz5kMxWNpTC0YiXmdGi7iPXgkKTXb0lawVbk8BJqpzjUASTdU"><span class="jam jam-whatsapp"></span></a></li>
             <li><a class="footer__linkinstagram" href="https://www.instagram.com/lunalunera_creaciones_/"><span class="jam jam-instagram"></span></a></li>
             <li><a class="footer__linkfacebook" href="https://www.facebook.com/lunalunera_creaciones_-109763644535187"><span class="jam jam-facebook-circle"></span></a> </li>
-            </ul>
-          </div>               
+          </ul>
+        </div>               
       </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>

@@ -1,5 +1,7 @@
-.color {
-  color: black;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .formato__titulo {
@@ -7,6 +9,14 @@
   text-align: center;
   color: green;
   font-size: 70px;
+}
+
+.transition {
+  transition: transform 2s;
+}
+
+.transform__titulo:hover {
+  transform: scale(1.3);
 }
 
 .formato__video {
@@ -21,17 +31,105 @@
   font-size: 50px;
 }
 
+.animacion__subtitulo {
+  animation-name: subtitulo;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes subtitulo {
+  0% {
+    color: #0d8af0;
+  }
+  50% {
+    color: #0dbf42;
+  }
+  100% {
+    color: blue;
+  }
+}
 .texto__presentacion {
   margin: 0 auto;
-  color: #040507;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 25px;
   text-align: center;
   background-color: grey;
-  width: 900px;
-  height: 95px;
+  width: 90%;
+  height: auto;
+}
+
+.tracking-in-expand:hover {
+  -webkit-animation: tracking-in-expand 6s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand 6s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.ultimos__productos {
+  text-align: center;
+}
+
+.subtitulo__ultimosproductos {
+  font-size: 300%;
+}
+
+.ultimosproductos__parrafo {
+  color: green;
+  font-size: 150%;
+}
+
+.fondo {
+  background-image: url(../imagenes/fondo.jpg);
+}
+
+.nav__alineacion {
+  display: grid;
+  grid-template-columns: 2, 1fr;
+  grid-template-areas: "ele1 ele2";
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0px;
+  padding-bottom: 3px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", Verdana, Geneva, Tahoma, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.nav__titulo {
+  color: brown;
+  text-decoration: none;
+}
+
+.img__logo {
+  width: 40px;
+  margin-right: 2px;
+}
+
+.nav__paginas {
+  padding: 2px;
+  text-decoration: none;
+  color: brown;
 }
 
 .formato__footer {
   position: relative;
+}
+
+.footer__logotipo {
+  margin: 0%;
+}
+
+.derechos {
+  text-align: center;
 }
 
 .formato__derechos {
@@ -43,7 +141,7 @@
   color: black;
 }
 
-.footer {
+.footer__links {
   position: relative;
 }
 
@@ -53,10 +151,6 @@
   position: absolute;
   bottom: 0%;
   right: 0%;
-}
-
-.footer__logotipo {
-  margin: 0%;
 }
 
 .footer__linkwhatsapp {
@@ -90,6 +184,41 @@
   left: -1rem;
 }
 
+.contacto__texto {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+}
+
+.imagen__contacto {
+  border-radius: 50%;
+}
+
+.titulo__encontranos {
+  text-align: center;
+  padding: 1rem;
+  font-size: 88px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+}
+
+.encontranos__texto {
+  text-align: center;
+  font-size: 100%;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.galeria__titulo {
+  font-size: 30px;
+  margin-bottom: 2rem;
+  color: blueviolet;
+  text-align: center;
+}
+
+.efecto__subtitulo:hover {
+  color: #0d8af0;
+}
+
 .galeria__contenedor {
   max-width: 1200px;
   margin: 0 auto;
@@ -108,15 +237,9 @@
   z-index: 1;
 }
 
-.galeria__titulo {
-  font-size: 30px;
-  margin-bottom: 2rem;
-  color: blueviolet;
-  text-align: center;
-}
-
-.efecto__subtitulo:hover {
-  color: #0d8af0;
+.efecto__galeria:hover {
+  transform: scale(1.2);
+  border: 4px solid orange;
 }
 
 .galeria__productosimagen {
@@ -128,11 +251,6 @@
 
 .efectotiempo {
   transition: transform 2s;
-}
-
-.efecto__galeria:hover {
-  transform: scale(1.2);
-  border: 4px solid orange;
 }
 
 .imagen__1 {
@@ -174,340 +292,4 @@
 
 .imagen__9 {
   grid-area: ele9;
-}
-
-.tarjeta__descuento {
-  background-color: brown;
-  color: white;
-  padding: 4px 5px;
-  display: inline-block;
-  border-radius: 16px;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-
-.tarjeta__agotarstock {
-  background-color: lawngreen;
-  color: black;
-  border: 1px solid;
-  padding: 4px 5px;
-  display: inline-block;
-  border-radius: 16px;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.formato__footer {
-  position: relative;
-}
-
-.formato__derechos {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  display: flex;
-  position: absolute;
-  top: 18px;
-  left: 40%;
-  color: black;
-}
-
-.footer {
-  position: relative;
-}
-
-.formato__footerlink {
-  list-style-type: none;
-  display: flex;
-  position: absolute;
-  bottom: 0%;
-  right: 0%;
-}
-
-.footer__logotipo {
-  margin: 0%;
-}
-
-.footer__linkwhatsapp {
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  color: #0dbf42;
-  font-size: 32px;
-  position: absolute;
-  bottom: -18px;
-  left: -5rem;
-}
-
-.footer__linkinstagram {
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  color: #bf4476;
-  font-size: 32px;
-  position: absolute;
-  bottom: -18px;
-  left: -3rem;
-}
-
-.footer__linkfacebook {
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  padding: 1px;
-  color: #0d8af0;
-  font-size: 32px;
-  position: absolute;
-  bottom: -18px;
-  left: -1rem;
-}
-
-@media screen and (max-width: 1023px) {
-  .footer__link {
-    margin-right: 0;
-  }
-
-  .section__galeria {
-    text-align: center;
-  }
-
-  .texto__presentacion {
-    width: 500px;
-    height: auto;
-  }
-
-  .formato__derechos {
-    left: 350px;
-    bottom: -20px;
-  }
-
-  .galeria__productosimagen {
-    width: 200px;
-    height: 200px;
-  }
-
-  .contenedor__productos {
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "ele1 ele2 ele3" "ele4 ele5 ele6" "ele7 ele8 ele9";
-  }
-}
-@media screen and (max-width: 600px) {
-  .formato__logotop {
-    background-color: #040507;
-  }
-
-  .nav__bar {
-    display: block;
-    position: relative;
-    text-align: center;
-    width: 100%;
-  }
-
-  .footer__link {
-    margin-right: 0;
-  }
-
-  .section__galeria {
-    text-align: center;
-  }
-
-  .texto__presentacion {
-    width: 500px;
-    height: auto;
-  }
-
-  .formato__derechos {
-    left: 150px;
-    bottom: 20px;
-  }
-
-  .formato__suscripcion {
-    left: 60px;
-  }
-
-  .suscripcion_ingreseemail {
-    left: 60px;
-  }
-
-  .suscripcion__relleno {
-    left: 60px;
-  }
-
-  .formulario__boton {
-    left: 210px;
-  }
-
-  .galeria__productosimagen {
-    width: 100px;
-    height: 100px;
-  }
-
-  .contenedor__productos {
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "ele1 ele2 ele3" "ele4 ele5 ele6" "ele7 ele8 ele9";
-    height: auto;
-  }
-}
-.formato__tituloproductos {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-align: center;
-  color: green;
-  font-size: 50px;
-}
-
-.main__fondoproductos {
-  background-color: aquamarine;
-}
-
-.degradado {
-  background-image: linear-gradient(to left, pink, white);
-}
-
-.degradado_header {
-  background-image: linear-gradient(to left, pink, black);
-}
-
-.transition {
-  transition: transform 2s;
-}
-
-.transform__titulo:hover {
-  transform: scale(1.3);
-}
-
-.transition__descuento {
-  transition: transform 2s;
-}
-
-.transform__descuento:hover {
-  transform: rotate(360deg);
-}
-
-.transition__agotarstock {
-  transition: all 3s;
-}
-
-.transform__agotarstock:hover {
-  transform: translate(-130px, 150px);
-}
-
-.animacion__subtitulo {
-  animation-name: subtitulo;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-}
-
-.contacto__texto {
-  text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 30px;
-}
-
-.imagen__contacto {
-  border-radius: 50%;
-}
-
-@keyframes subtitulo {
-  0% {
-    color: #0d8af0;
-  }
-  50% {
-    color: #0dbf42;
-  }
-  100% {
-    color: blue;
-  }
-}
-.tracking-in-expand:hover {
-  -webkit-animation: tracking-in-expand 6s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  animation: tracking-in-expand 6s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-}
-
-@-webkit-keyframes tracking-in-expand {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes tracking-in-expand {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.tarjeta__parrafo {
-  color: grey;
-}
-
-.color {
-  color: black;
-}
-
-.formato__titulo {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-align: center;
-  color: green;
-  font-size: 70px;
-}
-
-.formato__video {
-  padding: 1rem;
-  text-align: center;
-}
-
-.formato__subtitulo1 {
-  margin: 1rem;
-  text-align: center;
-  font-family: serif;
-  font-size: 50px;
-}
-
-.texto__presentacion {
-  margin: 0 auto;
-  color: #040507;
-  text-align: center;
-  background-color: grey;
-  width: 900px;
-  height: 95px;
-}
-
-.formato__video {
-  padding: 1rem;
-  text-align: center;
-}
-
-.formato__subtitulo1 {
-  margin: 1rem;
-  text-align: center;
-  font-family: serif;
-  font-size: 50px;
-}
-
-.titulo__encontranos {
-  text-align: center;
-  padding: 1rem;
-  font-size: 88px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: black;
-}
-
-.encontranos__texto {
-  text-align: center;
-  font-size: 100%;
-  font-family: "Times New Roman", Times, serif;
 }/*# sourceMappingURL=style.css.map */
