@@ -15,16 +15,28 @@
     <body class="fondo">
       <header>
         <div class="container">
-          <nav class="row nav__alineacion">
-            <a href="./index.html" class="col-auto nav__titulo">
-              <img src="./imagenes/llc.png" alt="logotipo" class="img__logo">Luna Lunera Creaciones
-            </a>
-            <div class="col-auto">
-              <a href="index.html" class="nav__paginas">Inicio</a>
-              <a href="./pages/contacto.html" class="nav__paginas">Contacto</a>
-              <a href="./pages/encontranos.html" class="nav__paginas">Encontranos</a>
-              <a href="./pages/productos.html" class="nav__paginas">Productos</a>
-              <a href="./pages/faq.html" class="nav__paginas">Faq</a>
+          <nav class="navbar navbar-expand-lg fondo">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Inicio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./pages/contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/encontranos.html">Encontranos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/faq.html">Faq</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/productos.html">Productos</a>
+                  </li>                
+                </ul>
+              </div>
             </div>
           </nav>
         </div>
@@ -52,7 +64,7 @@
                 <p class="ultimosproductos__parrafo">
                   Aqui podras ver nuestros productos mas recientes, los mismos seran presentados en la proxima feria de nuestra localidad!
                 </p>
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div id="carouselExampleControls" class="carousel slide carousel__tamaño" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="./imagenes/4.png" class="d-block w-100" height="500" alt="...">

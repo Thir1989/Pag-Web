@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -89,6 +90,12 @@
   font-size: 150%;
 }
 
+.carousel__tamaño {
+  width: 70%;
+  height: 70%;
+  left: 15%;
+}
+
 .fondo {
   background-image: url(../imagenes/fondo.jpg);
 }
@@ -121,36 +128,35 @@
 }
 
 .formato__footer {
-  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "ele1" "ele2" "ele3";
 }
 
 .footer__logotipo {
-  margin: 0%;
+  grid-area: "ele1";
+  justify-self: center;
 }
 
 .derechos {
   text-align: center;
+  grid-area: "ele3";
 }
 
 .formato__derechos {
   font-family: Georgia, "Times New Roman", Times, serif;
-  display: flex;
-  position: absolute;
-  top: 18px;
-  left: 40%;
-  color: black;
 }
 
 .footer__links {
-  position: relative;
+  grid-area: "ele2";
 }
 
 .formato__footerlink {
   list-style-type: none;
-  display: flex;
-  position: absolute;
-  bottom: 0%;
-  right: 0%;
+  display: grid;
+  grid-template-columns: 15% 15% 15%;
+  align-self: center;
+  justify-content: center;
 }
 
 .footer__linkwhatsapp {
@@ -158,9 +164,6 @@
   text-decoration: none;
   color: #0dbf42;
   font-size: 32px;
-  position: absolute;
-  bottom: -18px;
-  left: -5rem;
 }
 
 .footer__linkinstagram {
@@ -168,9 +171,6 @@
   text-decoration: none;
   color: #bf4476;
   font-size: 32px;
-  position: absolute;
-  bottom: -18px;
-  left: -3rem;
 }
 
 .footer__linkfacebook {
@@ -179,9 +179,6 @@
   padding: 1px;
   color: #0d8af0;
   font-size: 32px;
-  position: absolute;
-  bottom: -18px;
-  left: -1rem;
 }
 
 .contacto__texto {
@@ -192,6 +189,10 @@
 
 .imagen__contacto {
   border-radius: 50%;
+}
+
+.footer__configuracion {
+  padding-top: 8%;
 }
 
 .titulo__encontranos {
@@ -292,4 +293,84 @@
 
 .imagen__9 {
   grid-area: ele9;
+}
+
+@media screen and (max-width: 1023px) {
+  .galeria__productosimagen {
+    width: 200px;
+    height: 200px;
+  }
+
+  .contenedor__productos {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "ele1 ele2 ele3" "ele4 ele5 ele6" "ele7 ele8 ele9";
+  }
+}
+@media screen and (max-width: 600px) {
+  .galeria__productosimagen {
+    width: 300px;
+    height: 300px;
+  }
+
+  .contenedor__productos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formato__footer {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    position: relative;
+    left: 25%;
+    grid-template-areas: "ele1" "ele2" "ele3";
+  }
+
+  .derechos {
+    justify-self: center;
+    grid-area: ele3;
+  }
+
+  .formato__derechos {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    width: 250px;
+  }
+
+  .formato__footerlink {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 20px;
+  }
+
+  .footer__links {
+    grid-area: ele2;
+  }
+
+  .footer__logotipo {
+    justify-self: center;
+    grid-area: ele1;
+  }
+
+  .footer__linkwhatsapp {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #0dbf42;
+    font-size: 32px;
+  }
+
+  .footer__linkinstagram {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #bf4476;
+    font-size: 32px;
+  }
+
+  .footer__linkfacebook {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 1px;
+    color: #0d8af0;
+    font-size: 32px;
+  }
 }/*# sourceMappingURL=style.css.map */

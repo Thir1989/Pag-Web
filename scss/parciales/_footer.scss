@@ -1,47 +1,41 @@
 .formato__footer {
-    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "ele1" "ele2" "ele3";
 }
 .footer__logotipo {
-    margin: 0%;
+    grid-area: "ele1";
+    justify-self: center;
 }
 .derechos {
     text-align: center;
+    grid-area: "ele3";
 }
 .formato__derechos {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    display: flex;
-    position: absolute;
-    top: 18px;
-    left: 40%;
-    color: black;
 }
 .footer__links {
-    position: relative;
+    grid-area: "ele2";
 }
 .formato__footerlink {
     list-style-type: none;
-    display: flex;
-    position: absolute;
-    bottom: 0%;
-    right: 0%;    
+    display: grid;
+    grid-template-columns: 15% 15% 15%;
+    align-self: center;
+    justify-content: center;
 }
 .footer__linkwhatsapp {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: #0dbf42;
     font-size: 32px;
-    position: absolute;
-    bottom: -18px;
-    left: -5rem;
 }
 .footer__linkinstagram {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: #bf4476;
     font-size: 32px;
-    position: absolute;
-    bottom: -18px;
-    left: -3rem;
 }
 .footer__linkfacebook {
     font-family: Arial, Helvetica, sans-serif;
@@ -49,7 +43,4 @@
     padding: 1px;
     color: #0d8af0;
     font-size: 32px;
-    position: absolute;
-    bottom: -18px ;
-    left: -1rem;
 }

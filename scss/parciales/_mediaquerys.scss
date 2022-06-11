@@ -1,18 +1,4 @@
 @media screen and (max-width: 1023px) {
-    .footer__link {
-        margin-right: 0;
-    }
-    .section__galeria {
-        text-align: center;
-    }
-    .texto__presentacion {
-        width: 500px;
-        height: auto;
-    }
-    .formato__derechos {
-        left: 350px;
-        bottom: -20px;
-    }
     .galeria__productosimagen {
         width: 200px;
         height: 200px;
@@ -27,7 +13,66 @@
 }
 @media screen and (max-width: 600px) {
     .galeria__productosimagen {
-        width: 100px;
-        height: 100px;
+        width: 300px;
+        height: 300px;
     }      
+    .contenedor__productos {
+        display: flex;
+        flex-direction: column;
+    }
+    .formato__footer {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        justify-content: center;
+        position: relative;
+        left: 25%;
+        grid-template-areas: 
+        "ele1"
+        "ele2"
+        "ele3";
+      }
+      .derechos {
+        justify-self: center;
+        grid-area: ele3;
+      }
+      .formato__derechos {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        width: 250px;
+      }
+    .footer {
+      }
+      
+    .formato__footerlink {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 20px;
+      }
+    .footer__links {
+      grid-area: ele2;
+    }  
+    .footer__logotipo {
+        justify-self: center;
+        grid-area: ele1;
+      }
+      
+    .footer__linkwhatsapp {
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: #0dbf42;
+        font-size: 32px;
+      }
+    .footer__linkinstagram {
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: #bf4476;
+        font-size: 32px;
+        }
+    .footer__linkfacebook {
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;     
+        padding: 1px;
+        color: #0d8af0;
+        font-size: 32px;
+        }
 }
