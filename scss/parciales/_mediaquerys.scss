@@ -75,4 +75,20 @@
         color: #0d8af0;
         font-size: 32px;
         }
+    .contenedor__encontranos {   
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;        
+    }
+    .logo__encontranos {
+      width: 200px;
+      height: 200px;
+    }
+    .mapa__encontranos {
+      width: 200px;
+      height: 300px;
+    }
+    .encontranos__texto {
+      font-size: 30px;
+    }
 }
